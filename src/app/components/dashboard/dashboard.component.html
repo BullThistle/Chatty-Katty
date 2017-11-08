@@ -41,11 +41,15 @@
         <div class="window-content">
           <div class="pane-group">
             <div class="pane-sm sidebar">
-              <app-room-list [focusedRoom]="focusedRoom" (roomClick)="focusRoom($event)"></app-room-list>
-              <app-new-room></app-new-room>
+              <ul class="list-group">
+                <li class="list-group-header">
+                  <app-new-room></app-new-room>
+                </li>
+                <app-room-list [focusedRoom]="focusedRoom" (roomClick)="focusRoom($event)"></app-room-list>
+              </ul>
             </div>
             <div class="pane">
-              <app-chatroom *ngIf="focusedRoom" [localRoom]="focusedRoom" ></app-chatroom>
+              <app-chatroom *ngIf="focusedRoom" [localRoom]="focusedRoom"></app-chatroom>
             </div>
           </div>
         </div>
