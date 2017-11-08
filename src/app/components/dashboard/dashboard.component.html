@@ -1,31 +1,13 @@
 <div class="window">
   <!-- .toolbar-header sits at the top of your app -->
   <header class="toolbar toolbar-header">
-    <h1 class="title">{{userName}}</h1>
+    <h1 class="title">Northwest Chat</h1>
 
   <div class="toolbar-actions">
-    <div class="btn-group">
-      <button class="btn btn-default">
-        <span class="icon icon-home"></span>
-      </button>
-      <button class="btn btn-default">
-        <span class="icon icon-folder"></span>
-      </button>
-      <button class="btn btn-default active">
-        <span class="icon icon-cloud"></span>
-      </button>
-      <button class="btn btn-default">
-        <span class="icon icon-popup"></span>
-      </button>
-      <button class="btn btn-default">
-        <span class="icon icon-shuffle"></span>
-      </button>
-    </div>
-
-    <button class="btn btn-default">
-      <span class="icon icon-home icon-text"></span>
-      Filters
-    </button>
+    <span class="user-info">
+      <span class="icon icon-user"></span>
+      Logged In as {{userName}}
+    </span>
 
     <button class="btn btn-large btn-default pull-right" (click)="logout()">
       <span class="icon icon-logout"></span>
