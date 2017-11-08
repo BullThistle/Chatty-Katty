@@ -1,0 +1,36 @@
+<div class="window">
+  <!-- .toolbar-header sits at the top of your app -->
+  <header class="toolbar toolbar-header">
+  <h1 class="title">Login</h1>
+
+  <div class="toolbar-actions">
+    <button class="btn btn-large btn-default pull-right" (click)="goToSignup()">
+      <span class="icon icon-login"></span>
+      Sign up
+    </button>
+  </div>
+</header>
+
+  <!-- Your app's content goes inside .window-content -->
+  <div class="window-content">
+    <div class="padded-more">
+      <div class="window">
+        <div class="window-content">
+          <form>
+            <div class="form-group">
+              <label>Email address</label>
+              <input #inputEmail type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input #inputPassword type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-form btn-primary" (click)="logIn(inputEmail.value,inputPassword.value);inputEmail.value='';inputPassword.value='';">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.message-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.message-wrapper.other-author {
+  justify-content: flex-start;
+}
+
+.message-wrapper.self-author {
+  justify-content: flex-end;
+}
+
+.author-pic {
+  padding: .5em;
+  padding-right: 0px;
+}
+
+.message {
+  padding: .5em;
+  margin: .5em;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.message p {
+  font-size: 14px;
+  margin: 0px;
+}
+
+.message-info p {
+  font-size: 12px;
+  margin: 0px;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.timestamp {
+  color: gray;
+}

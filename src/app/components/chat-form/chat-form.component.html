@@ -1,0 +1,8 @@
+<form #form="ngForm" (submit)="sendMessage(form.value)">
+  <div class="form-group">
+    <input [(ngModel)]="messageText" name="messageText" class="form-control">
+    <button type="submit" class="btn btn-default">
+      <span class="icon icon-paper-plane"></span>
+    </button>
+  </div>
+</form>

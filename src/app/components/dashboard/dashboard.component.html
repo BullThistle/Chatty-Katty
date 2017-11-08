@@ -1,0 +1,55 @@
+<div class="window">
+  <!-- .toolbar-header sits at the top of your app -->
+  <header class="toolbar toolbar-header">
+  <h1 class="title">Header with actions</h1>
+
+  <div class="toolbar-actions">
+    <div class="btn-group">
+      <button class="btn btn-default">
+        <span class="icon icon-home"></span>
+      </button>
+      <button class="btn btn-default">
+        <span class="icon icon-folder"></span>
+      </button>
+      <button class="btn btn-default active">
+        <span class="icon icon-cloud"></span>
+      </button>
+      <button class="btn btn-default">
+        <span class="icon icon-popup"></span>
+      </button>
+      <button class="btn btn-default">
+        <span class="icon icon-shuffle"></span>
+      </button>
+    </div>
+
+    <button class="btn btn-default">
+      <span class="icon icon-home icon-text"></span>
+      Filters
+    </button>
+
+    <button class="btn btn-large btn-default pull-right" (click)="logout()">
+      <span class="icon icon-logout"></span>
+      Logout
+    </button>
+  </div>
+</header>
+
+  <!-- Your app's content goes inside .window-content -->
+  <div class="window-content">
+    <div class="padded-more">
+      <div class="window">
+        <div class="window-content">
+          <div class="pane-group">
+            <div class="pane-sm sidebar">
+              <app-room-list [focusedRoom]="focusedRoom" (roomClick)="focusRoom($event)"></app-room-list>
+              <app-new-room></app-new-room>
+            </div>
+            <div class="pane">
+              <app-chatroom *ngIf="focusedRoom" [localRoom]="focusedRoom" ></app-chatroom>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

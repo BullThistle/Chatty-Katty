@@ -1,0 +1,11 @@
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: .5em;
+}
+
+.form-control {
+  width: calc(100% - 33px);
+}

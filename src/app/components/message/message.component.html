@@ -1,0 +1,12 @@
+<div (mouseover)="imgHover()" (mouseleave)="imgLeave()" class="message-wrapper">
+  <div class="author-pic">
+    <img class="img-circle media-object pull-left" src="https://robohash.org/{{message.author}}.png?set=set4" width="45" height="45" alt="{{message.author}}">
+  </div>
+  <div class="message">
+    <p class="text">{{message.text}}</p>
+  </div>
+  <div *ngIf="infoShow" class="message-info">
+    <p class="author">{{message.author}}</p>
+    <p class="timestamp">{{formatDate(message.timestamp) | date:isToday(message.timestamp)}}</p>
+  </div>
+</div>
