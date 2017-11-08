@@ -12,6 +12,7 @@ import { AuthService } from '../services/auth.service';
 export class ChatFormComponent implements OnInit {
   user;
   userName: string;
+  userID: string;
   messageText: string = '';
   @Output() newMessage = new EventEmitter();
 
@@ -19,6 +20,7 @@ export class ChatFormComponent implements OnInit {
     this.authService.user.subscribe(user => {
       if (user != null) {
         this.userName = user.displayName;
+        this.userID = user.uid;
       }
     });
   }
@@ -27,7 +29,7 @@ export class ChatFormComponent implements OnInit {
   }
 
   sendMessage(value: any) {
-    var message = new ChatMessage(value.messageText, Date.now(), this.userName);
+    var message = new ChatMessage(value.messageText, Date.now(), this.userName, this.userID);
     this.messageText = '';
     this.newMessage.emit(message);
   }
