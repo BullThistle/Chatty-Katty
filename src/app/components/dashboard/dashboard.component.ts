@@ -31,10 +31,6 @@ export class DashboardComponent {
     });
   }
 
-  login() {
-    this.authService.login();
-  }
-
   logout() {
     this.authService.logout();
   }

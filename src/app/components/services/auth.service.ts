@@ -26,32 +26,6 @@ export class AuthService {
       }
     );
   }
-
-  // signInWithTwitter() {
-  //   return this._firebaseAuth.auth.signInWithPopup(
-  //     new firebase.auth.TwitterAuthProvider()
-  //   )
-  // }
-  // 
-  // 
-  signInWithFacebook() {
-    const {ipcRenderer} = require('electron');
-    ipcRenderer.send("fb-authenticate", "yes");
-    // if (ipcRenderer.)
-    
-  }
-
-  signInWithGoogle() {
-    return this._firebaseAuth.auth.signInWithPopup(
-      new firebase.auth.GoogleAuthProvider()
-    )
-  }
-  
-  login() {
-    this._firebaseAuth.auth.signInWithPopup(
-      new firebase.auth.GoogleAuthProvider()
-    )
-  }
   
   signIn(
     email: string,
@@ -64,15 +38,15 @@ export class AuthService {
     .catch((error) => {
       this.createUserError = error.message;
     });
-   }
-
-  isLoggedIn() {
-  if (this.userDetails == null ) {
-      return false;
-    } else {
-      return true;
-    }
   }
+
+  // isLoggedIn() {
+  // if (this.userDetails == null ) {
+  //     return false;
+  //   } else {
+  //     return true;
+  //   }
+  // }
 
   logout() {
     this._firebaseAuth.auth.signOut()
@@ -95,10 +69,8 @@ export class AuthService {
         });
       })
       .then(() => firebase.auth().signOut())
-      // .then(() => firebase.auth().signInWithEmailAndPassword(email, password))
       .catch((error) => {
         this.createUserError = error.message;
       });
-
   }
 }

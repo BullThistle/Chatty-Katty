@@ -19,7 +19,6 @@ user: Observable<firebase.User>;
 constructor(
   public authService: AuthService,
   private route: ActivatedRoute,
-  // private location: Location,
   public afAuth: AngularFireAuth,
   public router: Router
 ) {

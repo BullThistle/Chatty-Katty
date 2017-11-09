@@ -15,42 +15,6 @@ export class LoginFormComponent implements OnInit {
   constructor(private authService: AuthService, private router: Router) { 
     
   }
-
-
-  //  signInWithTwitter() {
-  //     this.authService.signInWithTwitter()
-  //     .then((res) => { 
-  //         this.router.navigate(['dashboard'])
-  //       })
-  //     .catch((err) => console.log(err));
-  //   }
-
-
-    // signInWithFacebook() {
-    //   this.authService.signInWithFacebook()
-    //   .then((res) => { 
-    //       this.router.navigate(['dashboard'])
-    //     })
-    //   .catch((err) => console.log(err));
-    // }
-
-    signInWithGoogle() {
-      console.log("this is this", this);
-      this.authService.signInWithGoogle()
-      .then((res) => { 
-          this.router.navigate(['dashboard'])
-        })
-      .catch((err) => console.log(err));
-    }
-    
-    signInWithFacebook() {
-      this.authService.signInWithFacebook()
-    //   .then((res) => { 
-    //       this.router.navigate(['dashboard'])
-    //     })
-    //   .catch((err) => console.log(err));
-    // }
-  }
     
   logIn(
     email: string,
