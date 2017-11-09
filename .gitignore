@@ -3,8 +3,9 @@
 #environments
 /src/environments
 
-#NorthChat
+#builds
 /NorthChat-darwin-x64
+/app-builds
 
 # compiled output
 /dist

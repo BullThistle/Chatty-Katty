@@ -23,7 +23,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RoomListComponent } from './components/room-list/room-list.component';
 import { NewRoomComponent } from './components/new-room/new-room.component';
 import { TimestampPipe } from './timestamp.pipe';
-import {NgxAutoScroll} from "ngx-auto-scroll/lib/ngx-auto-scroll.directive";
 
 export const firebaseConfig = {
   apiKey: environment.firebase.apiKey,
@@ -46,8 +45,7 @@ export const firebaseConfig = {
     RoomListComponent,
     NewRoomComponent,
     DashboardComponent,
-    TimestampPipe,
-    NgxAutoScroll
+    TimestampPipe
   ],
   imports: [
     BrowserModule,

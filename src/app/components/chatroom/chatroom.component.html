@@ -1,6 +1,6 @@
 <div class="chatroom">
   <h1>{{room.name}}</h1>
-  <div ngx-auto-scroll lock-y-offset="10" observe-attributes class="room" id="room">
+  <div lock-y-offset="10" observe-attributes class="room" id="room">
     <app-message *ngFor="let message of messages | timestamp:'ascending'" [message]="message"></app-message>
 
     <app-chat-form (newMessage)="sendMessage($event)"></app-chat-form>
