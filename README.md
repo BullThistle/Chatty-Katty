@@ -80,21 +80,9 @@ Please contact [Rafael Furry](rfurry@gmail.com), [Kelsey Langlois](mailto:kels.l
 
 ## Contributors
 
-[<img alt="Rafa" src="https://avatars0.githubusercontent.com/u/13779974?s=460&v=4" width="117">](https://github.com/bullthistle) |
-:---:
-|[Rafa](https://github.com/bullthistle)|
-
-[<img alt="Kelsey" src="https://avatars3.githubusercontent.com/u/25832730?s=460&v=4" width="117">](https://github.com/langlk) |
-:---:
-|[Kelsey](https://github.com/langlk)|
-
-[<img alt="Dan" src="https://avatars1.githubusercontent.com/u/12767468?s=460&v=4" width="117">](https://github.com/Dan-Nollette) |
-:---:
-|[Dan](https://github.com/Dan-Nollette)|
-
-[<img alt="Tyler" src="https://avatars1.githubusercontent.com/u/30584928?s=460&v=4" width="117">](https://github.com/Tylermiller94) |
-:---:
-|[Tyler](https://github.com/Tylermiller94)|
+| [<img alt="Rafa" src="https://avatars0.githubusercontent.com/u/13779974?s=460&v=4" width="117">](https://github.com/bullthistle) | [<img alt="Kelsey" src="https://avatars3.githubusercontent.com/u/25832730?s=460&v=4" width="117">](https://github.com/langlk) | [<img alt="Dan" src="https://avatars1.githubusercontent.com/u/12767468?s=460&v=4" width="117">](https://github.com/Dan-Nollette) | [<img alt="Tyler" src="https://avatars1.githubusercontent.com/u/30584928?s=460&v=4" width="117">](https://github.com/Tylermiller94) |
+|:---:|:---:|:---:|:---:|
+|[Rafa](https://github.com/bullthistle)|[Kelsey](https://github.com/langlk)|[Dan](https://github.com/Dan-Nollette)|[Tyler](https://github.com/Tylermiller94)|
 
 ### License
 
