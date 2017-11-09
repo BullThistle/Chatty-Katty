@@ -1,6 +1,6 @@
-||
-|:--:|
-|![Chatty Katty Logo](https://user-images.githubusercontent.com/13779974/32600186-a38fc8bc-c4f3-11e7-84d8-9b587ea8f6d9.png)|
+<p align="justify">
+  <img src="https://user-images.githubusercontent.com/13779974/32600186-a38fc8bc-c4f3-11e7-84d8-9b587ea8f6d9.png" alt="Chatty Katty Logo">
+</p>
 
 # Chatty Katty
 
