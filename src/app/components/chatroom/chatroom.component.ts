@@ -33,16 +33,17 @@ export class ChatroomComponent implements OnInit {
     });
     this.roomService.getMessages(this.localRoom.$key).subscribe(dataLastEmitted => {
       this.messages = dataLastEmitted;
+      this.localRoom.flag = 0;
     });
   }
-  
+
   ngAfterViewChecked() {
     if (this.localRoom.flag == 2){
       this.scrollToBottom();
     }
     this.localRoom.flag++;
   }
-  
+
   scrollToBottom(): void {
     this.feedContainer.nativeElement.scrollTop = this.feedContainer.nativeElement.scrollHeight;
   }

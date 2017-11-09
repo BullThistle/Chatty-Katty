@@ -285,6 +285,12 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+angular-drop-image@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/angular-drop-image/-/angular-drop-image-1.0.8.tgz#55bb2af60bd8b52ea40a6e6ec0b1c4025a6227ee"
+  dependencies:
+    ngstorage "^0.3.11"
+
 angularfire2@^4.0.0-rc.0:
   version "4.0.0-rc0"
   resolved "https://registry.yarnpkg.com/angularfire2/-/angularfire2-4.0.0-rc0.tgz#071bda9a51774b6d9e7ad8e8fd4486dbd3b8032b"
@@ -3982,9 +3988,17 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
+ngstorage@^0.3.11:
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/ngstorage/-/ngstorage-0.3.11.tgz#1637c45b872d909d9cc7e18b374898d50b2e844f"
+
 ngx-auto-scroll@^1.0.15:
   version "1.0.15"
   resolved "https://registry.yarnpkg.com/ngx-auto-scroll/-/ngx-auto-scroll-1.0.15.tgz#4dde48e7d730419ef9215bf84762d227e1fb2420"
+
+ngx-infinite-scroll@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/ngx-infinite-scroll/-/ngx-infinite-scroll-0.6.1.tgz#fd4e5056343500daf2e57af80258ff3d00cd3c9c"
 
 no-case@^2.2.0:
   version "2.3.2"
