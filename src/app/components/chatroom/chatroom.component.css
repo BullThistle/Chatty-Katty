@@ -8,6 +8,10 @@ h1 {
 
 .room {
   border-top: 1px solid #dddddd;
-  height: 80vh ;
+  height: calc(100vh - 135px);
+}
+
+.message-feed {
+  height: calc(100vh - 190px);
   overflow-y: scroll;
 }
