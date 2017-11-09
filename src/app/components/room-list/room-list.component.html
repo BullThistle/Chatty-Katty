@@ -1,5 +1,5 @@
 <li *ngFor="let room of rooms | async | timestamp:'descending'" (click)="focus(room)" [class]="isFocused(room)">
-  <img class="img-circle media-object pull-left" src="https://robohash.org/{{room.name}}.png?set=set4" width="45" height="45">
+  <img class="img-circle media-object pull-left" src="https://robohash.org/{{room.name | url}}.png?set=set4" width="45" height="45">
   <div class="media-body">
     <strong>{{room.name}}</strong>
     <p>{{room.lastMessage}}</p>

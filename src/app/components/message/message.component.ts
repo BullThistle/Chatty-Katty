@@ -3,6 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ChatMessage } from '../models/chat-message.model';
 import { User } from '../models/user.model';
 import { AuthService } from '../services/auth.service';
+import { UrlPipe } from '../../url.pipe';
 
 @Component({
   selector: 'app-message',

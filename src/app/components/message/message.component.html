@@ -1,6 +1,6 @@
 <div (mouseover)="imgHover()" (mouseleave)="imgLeave()" [class]="byUser(message)">
   <div class="author-pic">
-    <img class="img-circle media-object pull-left" src="https://robohash.org/{{message.author}}.png?set=set4" width="45" height="45" alt="{{message.author}}">
+    <img class="img-circle media-object pull-left" src="https://robohash.org/{{message.author | url}}.png?set=set4" width="45" height="45" alt="{{message.author}}">
   </div>
   <div class="message">
     <p class="text">{{message.text}}</p>

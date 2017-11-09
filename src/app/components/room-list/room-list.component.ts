@@ -3,6 +3,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 
 import { ChatRoom } from '../models/chat-room.model';
 import { RoomService } from '../../room.service';
+import { UrlPipe } from '../../url.pipe';
 
 @Component({
   selector: 'app-room-list',
