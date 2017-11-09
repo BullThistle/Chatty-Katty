@@ -1,11 +1,11 @@
 {
-  "name": "angular-electron",
-  "version": "1.9.0",
-  "description": "Angular 4 with Electron (Typescript + SASS + Hot Reload)",
-  "homepage": "https://github.com/maximegris/angular-electron",
+  "name": "Chatty-Katty",
+  "version": "0.1.0",
+  "description": "",
+  "homepage": "",
   "author": {
-    "name": "Maxime GRIS",
-    "email": "maxime.gris@gmail.com"
+    "name": "",
+    "email": ""
   },
   "keywords": [
     "angular",
@@ -106,5 +106,5 @@
     "webpack": "3.6.0",
     "webpack-dev-server": "2.8.2"
   },
-  "license": "SEE LICENSE IN LICENSE.md"
+  "license": "MIT"
 }
