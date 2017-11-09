@@ -22,6 +22,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RoomListComponent } from './components/room-list/room-list.component';
 import { NewRoomComponent } from './components/new-room/new-room.component';
 import { TimestampPipe } from './timestamp.pipe';
+// import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 export const firebaseConfig = {
   apiKey: environment.firebase.apiKey,
@@ -44,6 +45,7 @@ export const firebaseConfig = {
     NewRoomComponent,
     DashboardComponent,
     TimestampPipe
+    // InfiniteScrollModule
   ],
   imports: [
     BrowserModule,

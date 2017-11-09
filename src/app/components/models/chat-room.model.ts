@@ -5,6 +5,7 @@ export class ChatRoom {
   constructor(
     public name: string,
     public lastMessage: string,
-    public timestamp: number
+    public timestamp: number,
+    public flag: number = 0
   ) {}
 }

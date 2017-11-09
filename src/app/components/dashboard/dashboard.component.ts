@@ -4,6 +4,7 @@ import { AuthService } from '../services/auth.service';
 
 import { Router } from '@angular/router';
 import { ChatRoom } from '../models/chat-room.model';
+import { ChatroomComponent } from '../chatroom/chatroom.component'
 import { RoomService } from '../../room.service';
 
 
@@ -40,5 +41,6 @@ export class DashboardComponent {
 
   focusRoom(room: ChatRoom) {
     this.focusedRoom = room;
+    this.focusedRoom.flag = 0;
   }
 }

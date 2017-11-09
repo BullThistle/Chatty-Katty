@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-
+import { Component, OnInit, Input, ViewChild, ElementRef, AfterViewChecked } from '@angular/core';
 
 import { User } from '../models/user.model';
 import { ChatMessage } from '../models/chat-message.model';
@@ -15,8 +14,9 @@ export class ChatroomComponent implements OnInit {
   @Input() localRoom;
   room;
   messages;
+  @ViewChild('scroller') private feedContainer: ElementRef;
 
-  constructor(private roomService: RoomService) { }
+  constructor(private roomService: RoomService) {  }
 
   ngOnInit() {
     this.roomService.findRoom(this.localRoom.$key).subscribe(dataLastEmitted => {
@@ -35,9 +35,22 @@ export class ChatroomComponent implements OnInit {
       this.messages = dataLastEmitted;
     });
   }
+  
+  ngAfterViewChecked() {
+    console.log(this.localRoom.flag)
+    if (this.localRoom.flag == 2){
+      this.scrollToBottom();
+    }
+    this.localRoom.flag++;
+  }
+  
+  scrollToBottom(): void {
+    this.feedContainer.nativeElement.scrollTop = this.feedContainer.nativeElement.scrollHeight;
+  }
 
   sendMessage(message: ChatMessage) {
     this.roomService.sendMessage(this.room.$key, message);
+    this.localRoom.flag = 0;
   }
 
 }

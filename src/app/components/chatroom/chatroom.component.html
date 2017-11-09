@@ -1,7 +1,8 @@
+
 <div class="chatroom">
   <h1>{{room.name}}</h1>
   <div  class="room" id="room">
-    <div ngx-auto-scroll lock-y-offset="5" observe-attributes class="message-feed">
+    <div #scroller lock-y-offset="5" observe-attributes class="message-feed">
       <app-message *ngFor="let message of messages | timestamp:'ascending'" [message]="message"></app-message>
     </div>
 

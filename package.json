@@ -51,6 +51,7 @@
     "fb": "^2.0.0",
     "firebase": "^3.9.0",
     "ngx-auto-scroll": "^1.0.15",
+    "ngx-infinite-scroll": "^0.6.1",
     "rxjs": "5.4.3",
     "zone.js": "0.8.17"
   },
