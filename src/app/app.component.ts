@@ -12,12 +12,11 @@ import { ElectronService } from './providers/electron.service';
   providers: [AuthService, RoomService]
 })
 export class AppComponent {
-  
   user;
   private isLoggedIn: Boolean;
   private userName: String;
   focusedRoom: ChatRoom;
-  
+
   constructor(public electronService: ElectronService, public authService: AuthService, private router: Router) {
 
     if (electronService.isElectron()) {
@@ -43,7 +42,7 @@ export class AppComponent {
   login() {
     this.authService.login();
   }
-
+  
   logout() {
     this.authService.logout();
   }
