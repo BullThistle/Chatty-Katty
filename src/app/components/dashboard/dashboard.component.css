@@ -2,8 +2,18 @@
   border-bottom: 1px solid #ddd;
 }
 
+.test {
+  padding: .5em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .user-info {
-  margin-left: .5em;
+  display: flex;
+  align-items: center;
 }
 
 .icon {
