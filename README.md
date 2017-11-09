@@ -46,7 +46,7 @@ $ npm run electron:windows
 
 
 # Contributors 
-
+<div>
 [<img alt="Rafa" src="https://avatars0.githubusercontent.com/u/13779974?s=460&v=4" width="117">](https://github.com/bullthistle) |
 :---:
 |[Rafa](https://github.com/bullthistle)|
@@ -62,5 +62,5 @@ $ npm run electron:windows
 [<img alt="Tyler" src="https://avatars1.githubusercontent.com/u/30584928?s=460&v=4" width="117">](https://github.com/Tylermiller94) |
 :---:
 |[Tyler](https://github.com/Tylermiller94)|
-
+</div>
 
