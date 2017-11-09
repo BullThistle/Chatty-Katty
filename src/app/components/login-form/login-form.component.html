@@ -1,8 +1,7 @@
 <div class="window">
   <!-- .toolbar-header sits at the top of your app -->
   <header style="-webkit-app-region: drag" class="toolbar toolbar-header">
-  <h1 class="title"></h1>
-  <img src="../../images/chatty.png" alt="chatty">
+  <h1 class="title">Login</h1>
   <div class="toolbar-actions">
     <button class="btn btn-large btn-default pull-right" (click)="goToSignup()">
       <span class="icon icon-login"></span>
@@ -12,21 +11,21 @@
 </header>
 
   <!-- Your app's content goes inside .window-content -->
-  <div class="window-content">
+  <div class="window-content parent">
     <div class="padded-more">
-      <div class="window">
+      <div class="window background">
         <div class="window-content">
-          <form>
-            <img src="../../images/chatty.png" alt="chatty">
-            <div class="form-group">
-              <label>Email address</label>
+          <form class="child">
+            <div class="form-group center-align">
+              <label class="center">Email address</label>
               <input #inputEmail type="email" class="form-control" placeholder="Email">
             </div>
-            <div class="form-group">
-              <label>Password</label>
+            <div class="form-group center-align">
+              <label class="center-align">Password</label>
               <input #inputPassword type="password" class="form-control" placeholder="Password">
             </div>
-            <div class="form-actions">
+            <br>
+            <div class="form-actions center-align">
               <button type="submit" class="btn btn-form btn-primary" (click)="logIn(inputEmail.value,inputPassword.value);inputEmail.value='';inputPassword.value='';">Login</button>
             </div>
           </form>

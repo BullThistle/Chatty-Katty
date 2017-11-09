@@ -44,6 +44,7 @@
     "@angular/platform-browser": "4.4.3",
     "@angular/platform-browser-dynamic": "4.4.3",
     "@angular/router": "4.4.3",
+    "angular-drop-image": "^1.0.8",
     "angularfire2": "^4.0.0-rc.0",
     "bower": "^1.8.2",
     "core-js": "2.4.1",

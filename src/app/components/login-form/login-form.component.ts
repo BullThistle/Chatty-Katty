@@ -59,9 +59,10 @@ export class LoginFormComponent implements OnInit {
     this.authService.signIn(email, password);
   }
 
-    goToSignup() {
-      this.router.navigate(['signup'])
-    }
+  goToSignup() {
+    this.router.navigate(['signup'])
+  }
+    
 
   ngOnInit() {
   }

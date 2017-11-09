@@ -14,6 +14,7 @@ export class ChatFormComponent implements OnInit {
   userName: string;
   userID: string;
   messageText: string = '';
+  
   @Output() newMessage = new EventEmitter();
 
   constructor(public authService: AuthService) {
@@ -33,5 +34,7 @@ export class ChatFormComponent implements OnInit {
     this.messageText = '';
     this.newMessage.emit(message);
   }
+  
+
 
 }

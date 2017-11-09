@@ -1,3 +1,30 @@
-body{
-  background-image: url('https://forestcitytree.files.wordpress.com/2013/01/big-sitka-spruce-082112-011.jpg');
+.center{
+  margin: 0 auto;
+}
+.center-align{
+  text-align: center;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+
+  position: absolute;
+  top: 30%;
+  left: 51.75%;
+
+  margin: -70px 0 0 -170px;
+}
+
+.background {
+  background-image: url("../../images/cute.jpg");
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 30% 20%; 
+  /*background-color: #0000FF;*/
 }

@@ -37,7 +37,6 @@ export class ChatroomComponent implements OnInit {
   }
   
   ngAfterViewChecked() {
-    console.log(this.localRoom.flag)
     if (this.localRoom.flag == 2){
       this.scrollToBottom();
     }
@@ -49,7 +48,9 @@ export class ChatroomComponent implements OnInit {
   }
 
   sendMessage(message: ChatMessage) {
-    this.roomService.sendMessage(this.room.$key, message);
+    if(message.text.length > 0){
+      this.roomService.sendMessage(this.room.$key, message);
+    }
     this.localRoom.flag = 0;
   }
 

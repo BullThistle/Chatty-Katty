@@ -10,7 +10,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component'
 import { NgModule } from '@angular/core';
 
 const routes: Routes = [
-    { path: '', redirectTo: 'signup', pathMatch: 'full' },
+    { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'signup', component: SignupFormComponent},
     { path: 'login', component: LoginFormComponent },
     { path: 'dashboard', component: DashboardComponent }

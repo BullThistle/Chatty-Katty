@@ -1,0 +1,30 @@
+.center{
+  margin: 0 auto;
+}
+.center-align{
+  text-align: center;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+
+  position: absolute;
+  top: 35%;
+  left: 51.75%;
+
+  margin: -70px 0 0 -170px;
+}
+
+.background {
+  background-image: url("../../images/cute.jpg");
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 30% 20%; 
+  /*background-color: #0000FF;*/
+}

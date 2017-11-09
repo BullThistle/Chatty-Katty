@@ -12,24 +12,25 @@
 </header>
 
   <!-- Your app's content goes inside .window-content -->
-  <div class="window-content">
+  <div class="window-content parent">
     <div class="padded-more">
-      <div class="window">
+      <div class="window background">
         <div class="window-content">
-          <form>
-            <div class="form-group">
+          <form class="child">
+            <div class="form-group center-align">
               <label>Username</label>
               <input #newUsername type="text" class="form-control" placeholder="Username">
             </div>
-            <div class="form-group">
+            <div class="form-group center-align">
               <label>Email address</label>
               <input #newEmail type="email" class="form-control" placeholder="Email">
             </div>
-            <div class="form-group">
+            <div class="form-group center-align">
               <label>Password</label>
               <input #newPassword type="password" class="form-control" placeholder="Password">
             </div>
-            <div class="form-actions">
+            <br>
+            <div class="form-actions center-align">
               <button (click)="submitSignUpForm(newUsername.value, newEmail.value, newPassword.value);newUsername.value=''; newEmail.value=''; newPassword.value='';" type="submit" class="btn btn-form btn-primary">Signup</button>
             </div>
           </form>
