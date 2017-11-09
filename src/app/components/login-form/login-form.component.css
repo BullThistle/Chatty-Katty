@@ -37,6 +37,10 @@
   background-image: url("../../images/cute.jpg");
   background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 30% 20%; 
+    background-position: 30% 20%;
   /*background-color: #0000FF;*/
+}
+
+.icon {
+  margin-right: .3em;
 }
