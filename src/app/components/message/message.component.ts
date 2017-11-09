@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { ChatMessage } from '../models/chat-message.model';
 import { User } from '../models/user.model';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-message',
@@ -11,8 +12,17 @@ import { User } from '../models/user.model';
 export class MessageComponent implements OnInit {
   @Input() message: ChatMessage;
   infoShow: boolean;
+  userName: string;
+  userID: string;
 
-  constructor() { }
+  constructor(public authService: AuthService) {
+    this.authService.user.subscribe(user => {
+      if (user != null) {
+        this.userName = user.displayName;
+        this.userID = user.uid;
+      }
+    });
+  }
 
   ngOnInit() {
   }
@@ -37,6 +47,14 @@ export class MessageComponent implements OnInit {
 
   imgLeave() {
     this.infoShow = false;
+  }
+
+  byUser(message: ChatMessage) {
+    if (message.authorID === this.userID) {
+      return "message-wrapper self-author";
+    } else {
+      return "message-wrapper other-author";
+    }
   }
 
 }

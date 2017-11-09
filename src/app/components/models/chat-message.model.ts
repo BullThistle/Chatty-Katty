@@ -4,6 +4,7 @@ export class ChatMessage {
   constructor(
     public text: string,
     public timestamp: number,
-    public author: string
+    public author: string,
+    public authorID: string
   ) {}
 }

@@ -4,7 +4,6 @@ import { ModuleWithProviders }  from '@angular/core';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { ChatFormComponent } from './components/chat-form/chat-form.component';
 import { ChatroomComponent } from './components/chatroom/chatroom.component';
-import { FeedComponent } from './components/feed/feed.component';
 import { MessageComponent } from './components/message/message.component';
 import { SignupFormComponent } from './components/signup-form/signup-form.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component'

@@ -8,12 +8,17 @@
 }
 
 .message-wrapper.self-author {
-  justify-content: flex-end;
+  flex-direction: row-reverse;
 }
 
-.author-pic {
+.other-author .author-pic {
   padding: .5em;
   padding-right: 0px;
+}
+
+.self-author .author-pic {
+  padding: .5em;
+  padding-left: 0px;
 }
 
 .message {
@@ -21,7 +26,7 @@
   margin: .5em;
   background-color: #e4e4e4;
   border-radius: 5px;
-  max-width: 80%;
+  max-width: 60%;
 }
 
 .message p {

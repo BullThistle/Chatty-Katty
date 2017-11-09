@@ -16,7 +16,7 @@ import { RoomService } from '../../room.service';
 export class DashboardComponent {
   user;
   private isLoggedIn: Boolean;
-  private userName: String;
+  public userName: String;
   focusedRoom: ChatRoom;
 
   constructor(public authService: AuthService, private router: Router) {

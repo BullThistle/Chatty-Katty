@@ -1,7 +1,7 @@
 <div class="new-room">
   <form #form="ngForm" (submit)="addRoom(form.value)">
     <div class="form-group">
-      <input [(ngModel)]="roomName" name="roomName" class="form-control" placeholder="Add a Room">
+      <input [(ngModel)]="roomName" name="roomName" class="form-control" placeholder="Add a Chat Room" autocomplete="off">
       <button type="submit" class="btn btn-default"><span class="icon icon-plus"></span></button>
     </div>
   </form>

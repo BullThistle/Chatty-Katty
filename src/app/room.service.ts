@@ -33,9 +33,9 @@ export class RoomService {
     firebase.database().ref('chatrooms/' + roomID + '/timestamp').set(message.timestamp);
   }
 
-  addRoom(room: ChatRoom) {
+  addRoom(room: ChatRoom, message: ChatMessage) {
     var roomID = this.rooms.push(room).key;
-    this.sendMessage(roomID, new ChatMessage(room.lastMessage, room.timestamp, "anonymous"));
+    this.sendMessage(roomID, message);
   }
 
 }

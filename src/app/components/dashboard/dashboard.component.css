@@ -1,0 +1,30 @@
+.pane-sm.sidebar {
+  overflow-y: scroll;
+}
+
+.pane-sm.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+
+.list-group-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.test {
+  padding: .5em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: .3em;
+}
