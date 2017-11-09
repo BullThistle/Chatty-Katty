@@ -15,10 +15,18 @@
   padding: 20px;
 
   position: absolute;
-  top: 30%;
+  top: 38%;
   left: 51.75%;
 
   margin: -70px 0 0 -170px;
+}
+
+.form-group, .form-actions {
+  margin-top: 1.5em;
+}
+
+input.form-control {
+  border: 1px solid #5a5a5a;
 }
 
 .sign {
@@ -27,7 +35,7 @@
   padding: 20px;
 
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 61%;
 
   margin: -70px 0 0 -170px;

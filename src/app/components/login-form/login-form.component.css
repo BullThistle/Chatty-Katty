@@ -15,10 +15,22 @@
   padding: 20px;
 
   position: absolute;
-  top: 35%;
+  top: 38%;
   left: 51.75%;
 
   margin: -70px 0 0 -170px;
+}
+
+.form-group {
+  margin-top: 1.5em;
+}
+
+.form-actions {
+  margin-top: 1.9em;
+}
+
+input.form-control {
+  border: 1px solid #5a5a5a;
 }
 
 .log {
@@ -27,7 +39,7 @@
   padding: 20px;
 
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 62.5%;
 
   margin: -70px 0 0 -170px;

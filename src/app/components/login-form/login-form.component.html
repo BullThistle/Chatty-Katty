@@ -18,14 +18,11 @@
           <h1 class="log">Log In</h1>
           <form class="child">
             <div class="form-group center-align">
-              <label class="center">Email address</label>
               <input #inputEmail type="email" class="form-control" placeholder="Email">
             </div>
             <div class="form-group center-align">
-              <label class="center-align">Password</label>
               <input #inputPassword type="password" class="form-control" placeholder="Password">
             </div>
-            <br>
             <div class="form-actions center-align">
               <button type="submit" class="btn btn-form btn-primary" (click)="logIn(inputEmail.value,inputPassword.value);inputEmail.value='';inputPassword.value='';">Login</button>
             </div>
